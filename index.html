@@ -16,11 +16,9 @@
             <div class="container">
                 <nav class="navbar navbar-expand-xl py-0">
                     <div class="logo">
-                        <a class="navbar-brand py-0 me-0" href="#"><img src="assets/images/logo_tmp.png" width=25% alt=""></a>
+                        <a class="navbar-brand py-0 me-0" href="#"><img src="assets/images/logo_tmp.png" width=20% alt=""></a>
                     </div>
-                    <a class="d-inline-block d-lg-block d-xl-none d-xxl-none  nav-toggler text-decoration-none"  data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
-                        <i class="fi fi-br-menu-burger"></i>
-                    </a>
+              
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">                                             
                             <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
@@ -31,32 +29,12 @@
                             </li>
                             </ul>
                             <div class="d-flex align-items-center">
-                                <a class="btn btn-primary btn-hover-secondery text-capitalize " href="#">contact us</a>
+								<form action="mailto:woolberrygames@gmail.com">
+									<button type="submit" class="btn btn-primary btn-hover-secondery text-capitalize ">contact us</button>
+								</form>
                             </div>
                     </div>
                 </nav>
-            </div>
-
-            <div class="offcanvas offcanvas-start"  tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <div class="logo">
-                        <a class="navbar-brand py-0 me-0" href="#"><img src="assets/images/logo_tmp.png" width="50%" alt=""></a>
-                    </div> 
-                    <button type="button" class="btn-close text-reset  ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="ti ti-x"></i></button>
-                </div>
-                <div class="offcanvas-body pt-0">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About us</a>
-                        </li>
-                        </ul>
-                        <div class="login d-block align-items-center">
-                            <a class="btn btn-primary text-capitalize w-100" href="#">contact us</a>
-                        </div>
-                </div>
             </div>
     </header>
     <!------------------------------>
@@ -103,37 +81,48 @@
                     <div class="fs-2 section-heading text-uppercase fw-bold">
                         Have a question for us?
                     </div>
-                    <h5 class="fs-7 section-subheading text-uppercase fw-500">Contact us now</h5>
+                    <!-- <h5 class="fs-7 section-subheading text-uppercase fw-500">Contact us now</h5> -->
+					<form action="mailto:woolberrygames@gmail.com">
+						<button type="submit" class="btn btn-secondary btn-hover-primary text-capitalize mt-2 w-100">Send Us An Email</button>
+					</form>
                 </div>
+				<!-- FIGURE A FORM OUT LATER, I GUESS
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
-                    <form>
+                    <form id="contact-form">
                         <div class="row">
                             <div class="col-xxl-6 col-xl-6 col-md-6 col-sm-12 col-12">
                                 <div class="form-group">
-                                    <label  class="form-label text-uppercase fs-6 mb-3">Your Name</label>
-                                    <input type="text" class="form-control border-0" placeholder="Enter your name">
+                                    <label class="form-label text-uppercase fs-6 mb-3">Your Name</label>
+                                    <input id="contact-name" type="text" class="form-control border-0" placeholder="Enter your name">
                                 </div>
                             </div>
                             <div class="col-xxl-6 col-xl-6 col-md-6 col-sm-12 col-12">
                                 <div class="form-group">
                                     <label  class="form-label text-uppercase mb-3">Your Email</label>
-                                    <input type="email" class="form-control border-0" placeholder="Enter your email">
+                                    <input id="contact-email" type="email" class="form-control border-0" placeholder="Enter your email">
+                                </div>
+                            </div>
+							<div class="col-xxl-12 col-xl-12 col-12">
+                                <div class="form-group">
+                                    <label class="form-label text-uppercase mb-3">Your Subject</label>
+                                    <input id="contact-subject" type="text" class="form-control border-0" placeholder="Enter your subject">
                                 </div>
                             </div>
                             <div class="col-xxl-12 col-xl-12 col-12">
                                 <div class="mb-xxl-4 mb-xl-4 mb-lg-4 mb-md-4 mb-sm-3 mb-3">
-                                    <label  class="form-label text-uppercase mb-3">Your Message</label>
-                                    <textarea class="form-control border-0" placeholder="Enter your message"></textarea>
+                                    <label class="form-label text-uppercase mb-3">Your Message</label>
+                                    <textarea id="contact-message"  class="form-control border-0" placeholder="Enter your message"></textarea>
                                 </div>
                             </div>
                             <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                             </div> 
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 d-flex justify-content-end">
-                                <button class="btn btn-primary btn-hover-secondery text-capitalize mt-2 w-100">submit</button>
+                                <button form="contact-form" id="contact-submit" class="btn btn-primary btn-hover-secondery text-capitalize mt-2 w-100">submit</button>
                             </div>
                         </div>
                     </form>
                 </div>
+				-->
             </div>
 
         </div>
