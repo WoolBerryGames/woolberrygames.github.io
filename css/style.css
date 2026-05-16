@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Stylish&display=swap');
+
+@property --overlay-1 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: purple;
+}
+
+@property --overlay-2 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: pink;
+}
+
+@property --overlay-3 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #198a97;
+}
+
+@property --overlay-4 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: orange;
+}
+
+:root {
+  --bg: #ffeed6;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(190deg, color(from var(--overlay-1) xyz x y z / 0.3), transparent 50%),
+    linear-gradient(160deg, color(from var(--overlay-2) xyz x y z / 0.3), transparent 50%),
+    linear-gradient(40deg, color(from var(--overlay-3) xyz x y z / 0.3), transparent 50%),
+    linear-gradient(260deg, color(from var(--overlay-4) xyz x y z / 0.3), transparent 50%);
+  animation: 7s linear 0s infinite alternate gradientshift;
+}
+
+@keyframes gradientshift {
+  from {
+    --overlay-1: purple;
+    --overlay-2: pink;
+    --overlay-3: orange;
+    --overlay-4: #198a97;
+  }
+  
+  to {
+    --overlay-1: orange;
+    --overlay-2: #198a97;
+    --overlay-3: purple;
+    --overlay-4: pink;
+  }
+}
+
+div.text-block {
+  background-color: white;
+  max-width: 70dvw;
+  filter: drop-shadow(5px 5px 10px #44444d50);
+  border-radius: 15px;
+  margin: 20px;
+  padding: 20px;
+}
+
+div.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.centered-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.wip, section.about-us {
+  margin-top: 100px;
+}
+
+img.loading-gif {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%) brightness(190%) contrast(75%);
+}
+
+.footer {
+  background-color: #dac0dd;
+  padding: 30px 0 30px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+.footer .social-icons li a {
+  margin-right: 15px;
+  background-color: #5b1554;
+  border: 1px solid #5b1554;
+  height: 45px;
+  width: 45px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 33px;
+  padding-bottom: 0;
+  position: relative;
+  transition: 0.5s;
+}
+
+.footer .social-icons li a img + img {
+  display: none;
+}
+
+.footer .social-icons li a:hover {
+  background-color: #852678;
+}
+
+.footer .social-icons li a:hover::after {
+  position: absolute;
+  content: "";
+  border: 1px solid #852678;
+  right: -3px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  top: -4px;
+}
+.footer .social-icons li a:hover img {
+  display: none;
+}
+.footer .social-icons li a:hover img + img {
+  display: block;
+}
+
+.footer ul li {
+  padding-bottom: 15px;
+}
+.footer ul li a {
+  color: #68657c;
+}
+.footer ul li a:hover {
+  color: #061434;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+  align-items: center;
+  display: flex;
+}
+
+.stylish-regular {
+  font-family: "Stylish", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+  font-size: 64px;
+}
+
+.nunito-semi-bold {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+}
