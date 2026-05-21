@@ -23,7 +23,7 @@ createApp({
 			this.updateCirclePosition(this.circle3);
 			this.updateCirclePosition(this.circle4);
 			this.updateCirclePosition(this.circle5);
-		}, 15);
+		}, 12);
 	},
 	methods: {
 		updateCirclePosition(circle) {

@@ -44,7 +44,6 @@ body {
 	transform: translateY(-20%);
 }
 
-
 div.text-block {
 	background-color: #fef2e7;
 	max-width: 45dvw;
@@ -163,10 +162,17 @@ img.loading-gif {
 	color: white;
 	background-color: #852678;
 	border-radius: 5px;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 7px;
+	padding-right: 7px;
 }
 
+.highlight-link {
+	color: white;
+	background-color: #5b1554;
+	border-radius: 5px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
 .stylish-regular {
 	font-family: "Stylish", sans-serif;
 	font-weight: 1000;
