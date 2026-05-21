@@ -1,177 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Woolberry Games</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="stylesheet" href="dist/css/iconfont/tabler-icons.css">
-    <link rel="stylesheet" href="dist/css/style.css">
-</head>
-<body>
-    <!------------------------------>
-    <!-- Header Start -->
-    <!------------------------------>
-    <header class="main-header position-fixed w-100">
-            <div class="container">
-                <nav class="navbar navbar-expand-xl py-0">
-                    <div class="logo">
-                        <a class="navbar-brand py-0 me-0" href="#"><img src="assets/images/logo_tmp.png" width=20% alt=""></a>
-                    </div>
-              
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">                                             
-                            <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About us</a>
-                            </li>
-                            </ul>
-                            <div class="d-flex align-items-center">
-								<form action="mailto:woolberrygames@gmail.com">
-									<button type="submit" class="btn btn-primary btn-hover-secondery text-capitalize ">contact us</button>
-								</form>
-                            </div>
-                    </div>
-                </nav>
-            </div>
-    </header>
-    <!------------------------------>
-     <!-- Header End  -->
-    <!------------------------------>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Woolberry Games</title>
+		<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div id="app">
+			<div class="metaballs">
+				<svg class="metasvg">
+					<defs>
+						<filter id="gooify" width="400%" x="-10%" height="400%" y="-150%">
+							<feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+							<feColorMatrix
+								in="blur"
+								mode="matrix"
+								values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 25 -10" />
+						</filter>
+						<linearGradient id="lavaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+							<stop offset="0%" stop-color="#962685" />
+							<stop offset="100%" stop-color="#a5d5d6" />
+						</linearGradient>
+					</defs>
+					<g filter="url(#gooify)">
+						<circle
+							class="blobb glow"
+							fill="url(#lavaGradient)"
+							ref="circle1"
+							:cx="circle1.x"
+							:cy="circle1.y"
+							r="220" />
+						<circle
+							class="blobb glow"
+							fill="url(#lavaGradient)"
+							ref="circle2"
+							:cx="circle2.x"
+							:cy="circle2.y"
+							r="140" />
+						<circle
+							class="blobb glow"
+							fill="url(#lavaGradient)"
+							ref="circle3"
+							:cx="circle3.x"
+							:cy="circle3.y"
+							r="170" />
+						<circle
+							class="blobb glow"
+							fill="url(#lavaGradient)"
+							ref="circle4"
+							:cx="circle4.x"
+							:cy="circle4.y"
+							r="190" />
+						<circle
+							class="blobb glow"
+							fill="url(#lavaGradient)"
+							ref="circle5"
+							:cx="circle5.x"
+							:cy="circle5.y"
+							r="120" />
+					</g>
+				</svg>
+			</div>
+		</div>
 
-    <!------------------------------>
-    <!---- Hero Section Start------->
-    <!------------------------------>
-    <section class="hero-banner position-relative">
-        <div class="hero-bg-icons"></div>
-        <div class="left-white-overlay position-relative"></div>
-        <div class="right-white-overlay position-relative"></div>
-        <div class="container position-relative">
-            <div class="left-icon">
-                <!--<img src="assets/images/hero/Macbook_color.svg" class="img-fluid position-absolute">-->
-            </div>
-            <div class="right-icon">
-                <!--<img src="assets/images/hero/mobile-icon.svg" class="img-fluid position-absolute">-->
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-xxl-7 col-xl-8 col-lg-9 col-md-12 col-sm-12 col-12 text-center">
-                    <div class="hero-title fs-1 fw-bold text-uppercase">
-                        <div class="highlight-hero-title position-relative">
-                            <div class="highlight-hero-title-inner">
-                                under construction
-                            </div>
-                        </div>
-                    </div>
-					<img class="careto" src="assets/running_careto.gif"  width=20%>
-                </div>
-            </div>
-        </div>
-    </section>
-   
+		<section class="header">
+			<div class="centered-content">
+					<a class="nunito-semi-bold highlight-link" href="#home">Home</a>
+					&#9;||&#9;
+					<a class="nunito-semi-bold highlight-link" href="#wip">Working On</a>
+					&#9;||&#9;
+					<a class="nunito-semi-bold highlight-link" href="#about-us">Meet the Team</a>
+			</div>
+		</section>
 
-    <!------------------------------>
-    <!---- Contact Section Start --->
-    <!------------------------------>
-    <section class="contact position-relative">
-        <div class="container">
-            <div class="row">
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
-                    <div class="fs-2 section-heading text-uppercase fw-bold">
-                        Have a question for us?
-                    </div>
-                    <!-- <h5 class="fs-7 section-subheading text-uppercase fw-500">Contact us now</h5> -->
-					<form action="mailto:woolberrygames@gmail.com">
-						<button type="submit" class="btn btn-secondary btn-hover-primary text-capitalize mt-2 w-100">Send Us An Email</button>
-					</form>
-                </div>
-				<!-- FIGURE A FORM OUT LATER, I GUESS
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
-                    <form id="contact-form">
-                        <div class="row">
-                            <div class="col-xxl-6 col-xl-6 col-md-6 col-sm-12 col-12">
-                                <div class="form-group">
-                                    <label class="form-label text-uppercase fs-6 mb-3">Your Name</label>
-                                    <input id="contact-name" type="text" class="form-control border-0" placeholder="Enter your name">
-                                </div>
-                            </div>
-                            <div class="col-xxl-6 col-xl-6 col-md-6 col-sm-12 col-12">
-                                <div class="form-group">
-                                    <label  class="form-label text-uppercase mb-3">Your Email</label>
-                                    <input id="contact-email" type="email" class="form-control border-0" placeholder="Enter your email">
-                                </div>
-                            </div>
-							<div class="col-xxl-12 col-xl-12 col-12">
-                                <div class="form-group">
-                                    <label class="form-label text-uppercase mb-3">Your Subject</label>
-                                    <input id="contact-subject" type="text" class="form-control border-0" placeholder="Enter your subject">
-                                </div>
-                            </div>
-                            <div class="col-xxl-12 col-xl-12 col-12">
-                                <div class="mb-xxl-4 mb-xl-4 mb-lg-4 mb-md-4 mb-sm-3 mb-3">
-                                    <label class="form-label text-uppercase mb-3">Your Message</label>
-                                    <textarea id="contact-message"  class="form-control border-0" placeholder="Enter your message"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
-                            </div> 
-                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 d-flex justify-content-end">
-                                <button form="contact-form" id="contact-submit" class="btn btn-primary btn-hover-secondery text-capitalize mt-2 w-100">submit</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-				-->
-            </div>
+		<section id="home" class="home">
+			<div class="text-block centered">
+				<div class="centered-content">
+					<img class="main-logo" src="assets/images/logos/main_logo_no_stars.png" width="98%"/>
+				</div>
+				<div class="centered-content">
+					<p class="nunito-special">weaving experiences.</p>
+				</div>
+			</div>
+		</section>
 
-        </div>
-    </section>
-    <!------------------------------>
-    <!-- Contact Section End  -->
-    <!------------------------------>
-    
-    <!------------------------------>
-    <!-- Footer Section Start  -->
-    <!------------------------------>  
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xxl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                    <div class="footer-logo-col">
-                        <a href="#"><img src="assets/images/logo_tmp.png"></a>
-                        
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xxl-3 col-lg-3 col-md-4 col-sm-12 col-12">
-                    <h5 class="text-secondary fw-bold fs-4">Quick links</h5>
-                    <ul class="list-unstyled mb-0 pl-0">
-                        <li><a href="#" class="text-capitalize fs-6 text-decoration-none">Home</a></li>
-                        <li><a href="#" class="text-capitalize fs-6 text-decoration-none">about us</a></li>
-                    </ul><p class="copyrights fs-5 mb-0">Copyright @ <span id="autodate"></span></p>
-                        <ul class="social-icons list-unstyled mb-0 pl-0 d-flex align-items-center">
-                            
-                            <li><a href="https://x.com/woolberrygames" class="rounded-circle"><img src="assets/images/social-media/icons8-twitter-240.png" width="60%"><img src="assets/images/social-media/icons8-twitter-240.png" width="60%"></a></li>
-                            <li><a href="https://www.instagram.com/woolberrygames" class="rounded-circle"><img src="assets/images/social-media/icons8-instagram-240.png" width="80%"><img src="assets/images/social-media/icons8-instagram-240.png" width="80%"></a></li>
-                            <li><a href="https://woolberrygames.bsky.social" class="rounded-circle"><img src="assets/images/social-media/icons8-bluesky-240.png" width="60%"><img src="assets/images/social-media/icons8-bluesky-240.png" width="60%"></a></li>
-                            <li><a href="https://www.threads.com/@woolberrygames" class="rounded-circle"><img src="assets/images/social-media/icons8-threads-240.png" width="70%"><img src="assets/images/social-media/icons8-threads-240.png" width="70%"></a></li>
-                        </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!------------------------------>
-    <!-- Footer Section End  -->
-    <!------------------------------>  
-    
+		<section id="wip" class="wip">
+			<div class="text-block centered">
+				<div class="centered-content">
+					<p class="nunito-semi-bold">we're currently working on <span class="highlight">Caretos: Shepherd of Spirits</span>.</p>
+				</div>
+				<div class="centered-content">
+					<img class="loading-gif" src="assets/running_careto.gif" width="15%" />
+				</div>
+			</div>
+		</section>
 
-    <!------------------------------>
-    <!----------- Js Libs ---------->
-    <!------------------------------>
-    <script src="dist/js/jquery.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
-    <script src="dist/js/custom.js"></script>
+		<section id="about-us" class="about-us">
+			<div class="text-block centered">
+				<div class="centered-content">
+					<p class="nunito-semi-bold">about <span class="highlight">Woolberry</span></p>
+				</div>
+				<div class="centered-content closer">
+					<p class="nunito-lighter">Four people coming together. AAA experience. Independent Soul.</p>
+				</div>
+				<div class="centered-content closer">
+					<p class="nunito-lighter">Now we're channelling all of it into something unapologetically ours.</p>
+				</div>
+				<div class="centered-content">
+					<p class="nunito-semi-bold">the <span class="highlight">team</span></p>
+				</div>
+				<div class="centered-content">
+					<table>
+						<tr>
+							<th>
+								<img class="highlight" src="assets/images/icons8-test-account-100.png"/>
+								<p class="nunito-lighter closer"><b>Alexandra</b></p>
+								<p class="nunito-lighter">game design & project management</p>
+							</th>
+							<th>
+								<img class="highlight" src="assets/images/icons8-test-account-100.png"/>
+								<p class="nunito-lighter closer"><b>Batuhan</b></p>
+								<p class="nunito-lighter">game design & writing</p>
+							</th>
+						</tr>
+						<tr>
+							<th>
+								<img class="highlight" src="assets/images/icons8-test-account-100.png"/>
+								<p class="nunito-lighter closer"><b>Diogo</b></p>
+								<p class="nunito-lighter">game design & programming</p>
+							</th>
+							<th>
+								<img class="highlight" src="assets/images/icons8-test-account-100.png"/>
+								<p class="nunito-lighter closer"><b>Miguel</b></p>
+								<p class="nunito-lighter">game design & programming</p>
+							</th>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
 
-</body>
+		<footer class="footer">
+			<div class="centered-content">
+				<img src="assets/images/logos/simple_logo.png" width="160px" />
+				<ul class="social-icons list-unstyled">
+					<li>
+						<a href="https://x.com/woolberrygames" class="rounded-circle">
+							<img src="assets/images/social-media/new/icons8-close-window-100.png" width="100%" />
+							<img src="assets/images/social-media/new/icons8-close-window-100.png" width="100%">
+						</a>
+					</li>
+					<!--<li>
+						<a href="https://woolberrygames.bsky.social" class="rounded-circle">
+							<img src="assets/images/social-media/icons8-bluesky-240.png" width="65%" />
+							<img src="assets/images/social-media/icons8-bluesky-240.png" width="65%" />
+						</a>
+					</li>-->
+					<li>
+						<a href="https://www.instagram.com/woolberrygames" class="rounded-circle">
+							<img src="assets/images/social-media/new/icons8-instagram-100.png" width="95%" />
+							<img src="assets/images/social-media/new/icons8-instagram-100.png" width="95%" />
+						</a>
+					</li>
+					<!--<li>
+						<a href="https://www.threads.com/@woolberrygames" class="rounded-circle">
+							<img src="assets/images/social-media/icons8-threads-240.png" width="70%" />
+							<img src="assets/images/social-media/icons8-threads-240.png" width="70%" />
+						</a>
+					</li>-->
+					<!-- tiktok -->
+					<li>
+						<a href="" class="rounded-circle">
+							<img src="assets/images/social-media/new/icons8-tiktok-100.png" width="95%" />
+							<img src="assets/images/social-media/new/icons8-tiktok-100.png" width="95%" />
+						</a>
+					</li>
+					<!-- linkedin -->
+					<li>
+						<a href="https://www.linkedin.com/company/109454402/" class="rounded-circle">
+							<img src="assets/images/social-media/new/icons8-linkedin-100.png" width="100%" />
+							<img src="assets/images/social-media/new/icons8-linkedin-100.png" width="100%" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+			Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+			</div>
+		</footer>
+
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="js/app.js"></script>
+	</body>
 </html>
