@@ -139,9 +139,6 @@ img.loading-gif {
 	display: block;
 }
 
-.footer ul li {
-	padding-bottom: 15px;
-}
 .footer ul li a {
 	color: #68657c;
 }
@@ -207,6 +204,18 @@ img.loading-gif {
 	font-weight: 400;
 	font-style: normal;
 	font-size: 20px;
+}
+.nunino-small {
+	font-family: "Nunito", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 10px;
+}
+
+.subtle-link {
+	text-decoration: none;
+	color:#5d1556;
 }
 
 .closer {
