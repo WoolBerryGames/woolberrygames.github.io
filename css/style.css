@@ -99,11 +99,11 @@ img.loading-gif {
 }
 
 .footer .social-icons li a {
-	margin-right: 15px;
+	margin-right: 5px;
 	background-color: #5b1554;
 	border: 1px solid #5b1554;
-	height: 45px;
-	width: 45px;
+	height: 35px;
+	width: 35px;
 	font-size: 22px;
 	display: flex;
 	align-items: center;
@@ -112,6 +112,7 @@ img.loading-gif {
 	padding-bottom: 0;
 	position: relative;
 	transition: 0.5s;
+	margin-bottom: 0;
 }
 
 .footer .social-icons li a img + img {
@@ -127,8 +128,8 @@ img.loading-gif {
 	content: "";
 	border: 1px solid #852678;
 	right: -3px;
-	height: 50px;
-	width: 50px;
+	height: 40px;
+	width: 40px;
 	border-radius: 50%;
 	top: -4px;
 }
@@ -154,12 +155,19 @@ img.loading-gif {
 	list-style: none;
 	align-items: center;
 	display: flex;
+	margin-bottom: 3px;
+	margin-top:3px;
 }
 
 .footer-logo {
 	width: 25dvw;
 	max-width: 160px;
 }
+.social-media-section {
+	margin-left:5px;
+	margin-top:15px;
+}
+
 
 .highlight {
 	color: white;
