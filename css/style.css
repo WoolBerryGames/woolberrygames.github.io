@@ -165,7 +165,7 @@ img.loading-gif {
 	max-width: 160px;
 }
 .social-media-section {
-	margin-left:5px;
+	margin-left:10px;
 	margin-top:15px;
 }
 
@@ -251,6 +251,20 @@ img.loading-gif {
 .subtle-link {
 	text-decoration: none;
 	color:#5d1556;
+}
+
+.other-links-section {
+	margin-top: 5px;
+	margin-right:10px;
+	display:grid;
+	justify-content: right;
+	align-items: right;
+}
+
+.other-links-section a {
+	text-decoration: none;
+	color: black !important;
+	margin: 0;
 }
 
 .closer {
