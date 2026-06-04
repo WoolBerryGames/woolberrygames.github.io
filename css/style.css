@@ -46,7 +46,8 @@ body {
 
 div.text-block {
 	background-color: #fef2e7;
-	max-width: 45dvw;
+	max-width: 750px;
+	width: 80dvw;
 	filter: drop-shadow(5px 5px 0 #5d1556);
 	border-radius: 15px;
 	margin: 20px;
@@ -173,6 +174,7 @@ img.loading-gif {
 	padding-left: 7px;
 	padding-right: 7px;
 }
+
 .stylish-regular {
 	font-family: "Stylish", sans-serif;
 	font-weight: 1000;
