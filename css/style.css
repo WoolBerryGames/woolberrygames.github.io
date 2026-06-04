@@ -39,7 +39,7 @@ body {
 	margin-left: 0;
 	margin-right: 0;
 	margin-top: 0;
-	margin-bottom: 30px;
+	margin-bottom: 5dvh;
 	bottom: 100%;
 	transform: translateY(-20%);
 }
@@ -76,7 +76,7 @@ div.centered-content {
 
 section.wip,
 section.about-us {
-	margin-top: 100px;
+	margin-top: 5dvh;
 }
 
 img.loading-gif {
@@ -93,7 +93,7 @@ img.loading-gif {
 	margin-left: 0;
 	margin-right: 0;
 	margin-bottom: 0;
-	margin-top: 30px;
+	margin-top: 5dvh;
 	top: 100%;
 	transform: translateY(10%);
 }
@@ -157,6 +157,11 @@ img.loading-gif {
 	list-style: none;
 	align-items: center;
 	display: flex;
+}
+
+.footer-logo {
+	width: 25dvw;
+	max-width: 160px;
 }
 
 .highlight {
