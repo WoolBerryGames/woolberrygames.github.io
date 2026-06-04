@@ -271,3 +271,40 @@ img.loading-gif {
 	margin-top:-2px;
 	margin-bottom: -12px;
 }
+
+hr {
+	height: 1px;
+    color: #5d155640;
+    background: #5d155640;
+    font-size: 0;
+    border: 0;
+	margin-top:5px;
+	margin-bottom: 5px;
+	width: 20dvw;
+}
+
+.discord-icon a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 0;
+	position: relative;
+	transition: 0.3s;
+	border-radius:25px;
+}
+
+.discord-icon a:hover {
+	background: #852678ff;
+	border-radius: 25px;
+}
+
+.discord-icon a img + img {
+	display: none;
+}
+
+.discord-icon a:hover img {
+	display: none;
+}
+.discord-icon a:hover img + img {
+	display: block;
+}
