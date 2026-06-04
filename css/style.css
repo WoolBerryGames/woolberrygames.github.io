@@ -36,18 +36,19 @@ body {
 	border-bottom-right-radius: 25px;
 	filter: drop-shadow(5px 5px 0 #5d1556);
 	padding: 20px;
+	padding-top: 25px;
 	margin-left: 0;
 	margin-right: 0;
 	margin-top: 0;
 	margin-bottom: 5dvh;
 	bottom: 100%;
-	transform: translateY(-20%);
+	transform: translateY(-12%);
 }
 
 div.text-block {
 	background-color: #fef2e7;
 	max-width: 750px;
-	width: 80dvw;
+	width: 75dvw;
 	filter: drop-shadow(5px 5px 0 #5d1556);
 	border-radius: 15px;
 	margin: 20px;
@@ -95,7 +96,7 @@ img.loading-gif {
 	margin-bottom: 0;
 	margin-top: 5dvh;
 	top: 100%;
-	transform: translateY(10%);
+	transform: translateY(6%);
 }
 
 .footer .social-icons li a {
@@ -160,7 +161,7 @@ img.loading-gif {
 }
 
 .footer-logo {
-	width: 25dvw;
+	width: 20dvw;
 	max-width: 160px;
 }
 .social-media-section {
@@ -168,6 +169,18 @@ img.loading-gif {
 	margin-top:15px;
 }
 
+.team-icon {
+	width:15dvw;
+	max-width: 100px;
+}
+
+.team-title-a {
+	margin-top:7px;
+	margin-bottom:-5px;
+}
+.team-title-b {
+	margin-top:0;
+}
 
 .highlight {
 	color: white;
@@ -177,7 +190,7 @@ img.loading-gif {
 	padding-right: 7px;
 }
 
-.highlight-link {
+.header-link {
 	color: white;
 	background-color: #5b1554;
 	border-radius: 5px;
@@ -192,12 +205,26 @@ img.loading-gif {
 	font-size: 64px;
 }
 
-.nunito-special {
+.nunito-slogan {
 	font-family: "Nunito", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 600;
 	font-style: normal;
 	font-size: 40px;
+}
+.nunito-header {
+	font-family: "Nunito", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 20px;
+}
+.nunito-titles {
+	font-family: "Nunito", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
 }
 .nunito-semi-bold {
 	font-family: "Nunito", sans-serif;
