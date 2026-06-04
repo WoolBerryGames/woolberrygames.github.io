@@ -41,8 +41,12 @@ body {
 	margin-right: 0;
 	margin-top: 0;
 	margin-bottom: 5dvh;
-	bottom: 100%;
-	transform: translateY(-12%);
+	top: 0;
+	transform: translateY(-8%);
+	position: fixed;
+	z-index: 2;
+	left: 5px;
+	right: 10px;
 }
 
 div.text-block {
@@ -80,6 +84,10 @@ section.about-us {
 	margin-top: 5dvh;
 }
 
+section.home {
+	margin-top: 15dvh;
+}
+
 img.loading-gif {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%) brightness(190%) contrast(75%);
@@ -96,15 +104,17 @@ img.loading-gif {
 	margin-bottom: 0;
 	margin-top: 5dvh;
 	top: 100%;
-	transform: translateY(6%);
+	left: 5px;
+	right: 10px;
+	transform: translateY(8%);
 }
 
 .footer .social-icons li a {
 	margin-right: 5px;
 	background-color: #5b1554;
 	border: 1px solid #5b1554;
-	height: 35px;
-	width: 35px;
+	height: 45px;
+	width: 45px;
 	font-size: 22px;
 	display: flex;
 	align-items: center;
@@ -124,16 +134,6 @@ img.loading-gif {
 	background-color: #852678;
 }
 
-.footer .social-icons li a:hover::after {
-	position: absolute;
-	content: "";
-	border: 1px solid #852678;
-	right: -3px;
-	height: 40px;
-	width: 40px;
-	border-radius: 50%;
-	top: -4px;
-}
 .footer .social-icons li a:hover img {
 	display: none;
 }
